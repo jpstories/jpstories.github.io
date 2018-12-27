@@ -1,0 +1,82 @@
+/*------------ Color Palette ------------*/
+/*
+LIGHT ORANGE: #e4644b
+DARK ORANGE: #d05942
+DARK BROWN: #484141
+Menu text: #f7f1e3
+Submenu text: #ae9f9f
+*/
+
+/*------------ General Settings ------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+ul {
+    width: 300px;
+    list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+/*------------ Main Menu ------------*/
+.mainmenu {
+    font-size: 18px;
+    margin: 7px 0;
+    padding: 0;
+}
+
+.mainmenu > li {
+    height: 59px;
+    color: #f7f1e3;
+    border-top: 1px solid #d05942;
+    background-color: rgb(99, 117, 207);
+    margin-left: 9px;
+}
+
+.mainmenu > li span {
+    line-height: 55px;
+    display: block;
+}
+.mainmenu > li img {
+    margin-right:10px;
+}
+.mainmenu > li .icon {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-top: 16.1px;
+    margin-left:14px;
+}
+
+/*------------ Sub Menu ------------*/
+.submenu {
+    font-size: 15px;
+    box-sizing: border-box;
+    content: " ";
+    color: black;
+}
+
+.submenu li {
+    line-height: 15px;
+    height: 35px;
+    margin-left: -23px;
+    padding-top: 11px;
+    transition: border-left 220ms ease-in;
+    border-left: solid 6px #004d80;
+    background-color: #fff;
+}
+
+.submenu .chosen,
+.submenu .chosen:hover {
+    border-left: solid 6px #0099ff;
+}
+
+.submenu li:hover {
+    border-left: solid 6px #0099ff;
+}
+
+.submenu li span {
+    margin-left:30px;
+}
