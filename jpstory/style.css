@@ -1,0 +1,124 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    background: #f8f8f8;
+    overflow: hidden;
+    perspective: 1000px;
+    margin-top: 45px;
+}
+
+.dot {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: url('img/petal.png');
+    background-size: 100% 100%;
+}
+#petals {
+    width: 100%;
+    height: 100%;
+}
+.card {
+    width: 100%;
+    max-width: 800px;
+    min-height: 460px;
+    padding: 15px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform-style: preserve-3d;
+    perspective: 200px;
+    opacity: 0;
+    background-color: rgb(43, 43, 43);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transform: translate3d(-40%, -50%, 0) rotateY(15deg);
+    animation: card 1s linear 1s forwards;
+    transition: 0.5s;
+}
+
+.title {
+    margin-bottom: 10px;
+    background-image: linear-gradient(110deg, #ff6945 0%, #8047ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ff6945;
+    font-size: 80px;
+    line-height: 1;
+    text-align: center;
+}
+.text {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: rgb(245, 245, 245);
+    font-size: 35px;
+    line-height: 1.4;
+    font-family: 'Caveat', cursive;
+    transition: 0.3s;
+}
+.author {
+    background-image: linear-gradient(110deg, #ff6945 0%, #8047ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    color: #121212;
+    font-size: 40px;
+    text-align: right;
+    padding-right: 40px;
+    transition: opacity 1s linear;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.author span:first-child{
+    font-family: 'Caveat', cursive;
+
+}
+
+.author__btn{
+    border: 2px solid rgb(120, 32, 172);
+    padding: 10px;
+    cursor: pointer;
+    width: max-content;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+.author__btn:hover{
+    box-shadow: 0 0 3px 3px purple;
+}
+
+@keyframes card {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.samurai{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 390px;
+    right: -180px;
+    /* transform: rotateY(180deg); */
+}
+
+.tower{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 360px;
+    left: 205px;
+}
+
+.tower img{
+    width: 400px;
+    height: 600px;
+}
