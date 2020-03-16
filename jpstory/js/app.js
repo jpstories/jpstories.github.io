@@ -25,7 +25,7 @@ function R(min,max) { return min+Math.random() * (max-min) };
 
 /* https://mattboldt.com/typed.js/ */
 var typed = new Typed('#text', {
-    strings: ['こんにちは、私の名前はSergeyです。私はWebアプリケーション開発者です。 今、あなたの前にいるのは私の創作の一つです。 私はこれを2年間ずっとこのような不名誉なことをしてきました。 ご清聴ありがとうございました！'],
+    strings: ['こんにちは、私の名前はSergeyです。私はWebアプリケーション開発者です。これが私のポートフォリオです。 私はあなたにそれを理解することを勧めます。'],
     startDelay: 3000,
     typeSpeed: 80,
     backSpeed: 0,
