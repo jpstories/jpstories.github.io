@@ -83,3 +83,9 @@ body {
     top: 395px;
     left: 30px;
 }
+
+@media screen and (max-width: 630px) {
+    .tulpan {
+        bottom: 565px;
+    }
+}
