@@ -84,9 +84,10 @@ body {
     left: 30px;
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 530px) {
     .tulpan {
         top: 635px;
+        left: 270px;
     }
     .title {
         margin-right: 55px;
